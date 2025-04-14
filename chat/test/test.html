@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Web Chat</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Minimalist Web Chat</h1>
+
+        <!-- Login Form -->
+        <div id="loginForm">
+            <form id="login">
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="loginResponse" class="response"></div>
+        </div>
+
+        <!-- Chat Interface -->
+        <div id="chatInterface" style="display: none;">
+            <div class="welcome">Welcome, <span id="currentUser"></span>!</div>
+
+            <!-- Form to submit chat messages -->
+            <form id="chatForm">
+                <textarea id="message" placeholder="Type your message..." required></textarea>
+                <input type="text" id="userImg" placeholder="Optional image URL">
+                <button type="submit">Send</button>
+            </form>
+            <div id="chatResponse" class="response"></div>
+
+            <!-- Section to display chat messages -->
+            <div id="chatOutput" class="chatOutput"></div>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
