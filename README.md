@@ -1,1 +1,1 @@
-[go to](./index.php)
+[go to](./chat/Index.php)
